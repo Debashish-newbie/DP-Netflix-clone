@@ -1,0 +1,537 @@
+*{
+ margin: 0;
+ padding: 0;
+}
+html{
+    font-size: 100px;
+}
+body{
+   background-color: black;
+   width: 100%;
+   max-width: 100%;
+   display: flex;
+   flex-direction: column;
+   
+    
+}
+.main{
+    background-image: url("assets/images/IN-en-20250721-TRIFECTA-perspective_cadc8408-df6e-4313-a05d-daa9dcac139f_large.jpg");
+    height: 90vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-size: cover;
+    overflow: hidden;
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.75;
+    z-index: 1;
+    background-size: cover;
+    position: absolute;
+}
+.nav{
+    display: flex;
+    height: 80px;
+    width: 80vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    z-index: 10;
+    
+   
+    
+    /* background-color: aqua; */
+    
+    
+}
+.nav img{
+    height: 100%;
+    z-index: 10;
+    
+}
+
+.tex{
+    
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    min-height: 50%;
+    width: 40%;
+    padding-top: 8%
+  
+    
+    /* background-color: antiquewhite; */ 
+}
+.login{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.login input{
+    margin-top: 20px;
+    border: none;
+    height: 40px;
+    width: 380px;
+     background-color: rgba(23, 23, 23, 0.3);
+     border: 1px solid grey;
+     border-radius: 20px;
+     padding: 10px;
+     color: azure;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-size: 0.2rem;
+}
+.login button{
+    padding: 10px;
+    margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  height: 60px;
+  width: 200px;
+  background-color: red;
+  transition: 0.7s;
+}
+.login button:hover{
+    background-color: rgba(255, 0, 0, 0.752);
+}
+.tex span:nth-child(1) {
+    color: white;
+    font-size: 0.6rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    
+}
+.tex span:nth-child(2) {
+    color: white;
+    font-size: 0.24rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 15px;
+    
+}
+.tex span:nth-child(3) {
+    color: white;
+    font-size: 0.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+.curve img{
+    width: 100%;
+    height:100%;
+}
+.cardcon{
+    height: auto;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 110px; margin-right: 110px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3%;
+}
+.cardcon span:first-child{
+   align-self: flex-start;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin: 15px;
+    margin-left: 0;
+    margin-top: 0;
+   
+    
+}
+.cardbox{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    flex-wrap: nowrap;
+
+   padding-bottom: 30px; padding-top: 30px;
+   overflow-x: auto;
+   overflow-y: hidden;
+   justify-content: space-between;
+}
+.cardbox::-webkit-scrollbar {
+  display: none;
+}
+.card{
+    height: 250px;
+    width: 180px;
+    flex-shrink: 0;
+    transition: 0.3s;
+    position: relative;
+    
+    /* background-color: aqua; */
+   
+}
+/* .num{
+    color: black;
+    position: absolute;
+    font-size: 100px !important;
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+    
+    top: 40%;
+    right: 60%;
+    
+} */
+
+.card:hover{
+    transform: scale(1.08);
+}
+.card img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+.more{
+    height: auto;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 110px; margin-right: 110px;
+    display: flex;
+    margin-bottom: 5%;
+    flex-direction: column;
+}
+.more span{
+    align-self: flex-start;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin: 15px;
+    margin-left: 0;
+}
+.texcon{
+    display: flex;
+    flex-direction: column;
+}
+.texcon span:nth-child(1){
+   
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    
+}
+.texcon span:nth-child(2){
+   
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    
+}
+.rcardbox{
+   display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+   justify-content: space-between;
+    gap: 20px; 
+
+    
+ 
+}
+.rcard{
+    height: 294px;
+    width: 260px;
+    background: linear-gradient(135deg, rgba(87, 34, 145, 0.9), rgba(28, 15, 62, 0.95));
+    border-radius: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+    padding: 20px;
+
+    
+    
+
+}
+.rcard span{
+    
+   
+}
+.rcard svg{
+
+   align-self: flex-end;
+   margin-right: 20px;
+}
+.faq{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    
+    margin-left: 110px; margin-right: 110px;
+    /* background-color: antiquewhite; */
+}
+.faqwrapper{
+    height: auto;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+   
+}
+.faqwrapper span{
+    align-self: flex-start;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin: 15px;
+    margin-left: 0;
+}
+.q{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    gap: 10px;
+
+}
+.fa{
+   
+  color: white;
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  transition: 0.3s;
+  background-color: rgba(151, 149, 144, 0.382);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 24px;
+     
+}
+.fa:hover{
+    background-color: rgba(151, 149, 144, 0.536);
+}
+.lastinput{
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.lastinput .r{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+.rn{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+#l1 {
+  padding: 3px 6px;
+  font-weight: bold;
+  width: 90px;
+  height: 40px;
+  color: white;
+  background-color: black;
+  border: 2px solid grey;
+  border-radius: 10px;
+}
+.rn button{
+    padding: 5px;
+    max-width: 90px;
+  font-weight: bold;
+  color: antiquewhite;
+  background-color: red;
+  border-radius: 6px;
+  border: 2px solid grey;
+  border: none;
+
+}
+.btn2:hover{
+    background-color: rgba(255, 0, 0, 0.752);
+
+}
+footer{
+    margin-left: 110px; margin-right: 110px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 100px;
+    font-size: 0.18rem;
+}
+.grid{
+    
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 170px 170px 170px 170px;
+    grid-template-rows: 20px 20px 20px 20px;
+    row-gap: 15px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 30px;
+    
+    
+}
+.grid a:active{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.grid a:visited{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+footer span:first-child{
+    color: azure;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 1530px){
+    .tex{
+        padding-top: 3%;
+        
+    }
+    .rcardbox{
+        flex-wrap: nowrap;
+    }
+    .rcard{
+        width: calc(100% / 4);
+    }
+}
+@media(max-width: 1500px){
+
+    .cardcon, .more, .faq, footer{
+        margin-left: 80px; margin-right: 80px;
+    }
+    .rcardbox{
+        flex-direction: row;
+        align-items: normal;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+        
+        
+    }
+    .rcard{
+        max-height: 190px;
+        min-width: 45%;
+    }
+    .grid{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        row-gap: 20px;
+        column-gap: 20px;
+        align-content: center;
+    }
+    
+    .texcon span:nth-child(2){
+        margin-top: -8px;
+        font-size: 20px;
+    }
+
+}
+
+@media(max-width: 1170px){
+     .cardcon, .more, .faq, footer{
+        margin-left: 30px; margin-right: 30px;
+    }
+    .tex span:nth-child(1) {
+        font-size: 0.4rem;
+    }
+
+    
+    .rcard{
+        width: 100%;
+    }
+}
+@media(max-width: 685px ){
+    .nav{
+        width: 90vw;
+    }
+    .nav img{
+        height: 70%;
+    }
+    #l1{
+        height: 75%;
+    }
+    .rn button{
+        height: 75%;
+    }
+    .login input{
+        height: 30px;
+        width: 300px;
+    }
+    .login button{
+        height: 50px;
+        margin-top: 0;
+    }
+    .tex{
+        width: 80%;
+    }
+    .login{
+        flex-direction: column;
+    }
+    
+}
+@media(max-height: 720px ){
+    .tex span:nth-child(1) {
+        font-size: 0.3rem;
+    }
+     .login input{
+        height: 20px;
+        width: 300px;
+    }
+    .login button{
+        height: 40px;
+        
+    }
+    .tex{
+        padding-top: 1%;
+        width: 100%;
+    }
+   
+}
+
+
