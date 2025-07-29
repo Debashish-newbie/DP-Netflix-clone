@@ -109,7 +109,9 @@ body{
 }
 .login button:hover{
     background-color: rgba(255, 0, 0, 0.752);
+    cursor: pointer;
 }
+
 .tex span:nth-child(1) {
     color: white;
     font-size: 0.6rem;
@@ -324,6 +326,7 @@ body{
 }
 .fa:hover{
     background-color: rgba(151, 149, 144, 0.536);
+    cursor: pointer;
 }
 .lastinput{
     margin: 5%;
@@ -361,10 +364,16 @@ body{
   border-radius: 6px;
   border: 2px solid grey;
   border: none;
+  transition: 0.5s;
 
+}
+.rn button:hover{
+   background-color: rgba(255, 0, 0, 0.752);
+    cursor: pointer; 
 }
 .btn2:hover{
     background-color: rgba(255, 0, 0, 0.752);
+    cursor: pointer;
 
 }
 footer{
@@ -427,6 +436,7 @@ footer span:first-child{
 
 
 
+
 @media(min-width: 1530px){
     .tex{
         padding-top: 3%;
@@ -442,7 +452,7 @@ footer span:first-child{
 @media(max-width: 1500px){
 
     .cardcon, .more, .faq, footer{
-        margin-left: 80px; margin-right: 80px;
+        margin-left: 40px; margin-right: 40px;
     }
     .rcardbox{
         flex-direction: row;
@@ -454,9 +464,10 @@ footer span:first-child{
         
     }
     .rcard{
-        max-height: 190px;
+        max-height: 185px;
         min-width: 45%;
     }
+    
     .grid{
         display: flex;
         flex-wrap: wrap;
@@ -515,7 +526,7 @@ footer span:first-child{
     }
     
 }
-@media(max-height: 720px ){
+@media(max-height: 500px ){
     .tex span:nth-child(1) {
         font-size: 0.3rem;
     }
@@ -531,7 +542,7 @@ footer span:first-child{
         padding-top: 1%;
         width: 100%;
     }
-   
+  
 }
 
 
