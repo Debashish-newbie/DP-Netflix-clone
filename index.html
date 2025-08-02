@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="Netflix.css">
     <link rel="data-icon" href="assets/svg/box.svg">
 </head>
+<div id="overlay-popup"></div>
 
 <body>
     <main class="main">
@@ -37,41 +38,41 @@
 
 
     </main>
-    <img src="assets/images/curve.png" alt=""></img>
+    <img class="cur" src="assets/images/curve2.png" alt=""></img>
     <div class="cardcon">
         <span>Trending Now</span>
         <div class="cardbox">
 
-            <div class="card">
+            <div class="card" id="c1">
 
                 <img src="assets/images/AAAABaW57jWqw0Gs9gqgmW816THwyNfPqphIiruQRFy9KXtt9PTPJpB4kzDKriPcpNjPKCj0itu1Yfjl-CR8rGEokBHPKE4O9lZQHXHRRpUHEelwoKk8lOf4gqlws-HnR2iZeSk4.webp"
                     alt="">
             </div>
-            <div class="card"><img
+            <div class="card" id="c2"><img
                     src="assets/images/AAAABbseCvMwOHdHL3P32GIeSthQVIKkmQmnbNu_wbWHMBPYCqoED7aOFGjfEz3Uiwpk0rQ3jmRUL0B2ybbso3_rWM5eC6nhyAN7gGBexVG4geRDPKaSImz8A9a7_cun7cT8fTeQ.webp"
                     alt=""></div>
-            <div class="card"><img
+            <div class="card" id="c3"><img
                     src="assets/images/AAAABcH5_XDKPeXszDIKUeRk9f8gbZf2IIH_vdf4CNwOb7kql21x-tuHFIQn1NVGFCzD79WrtEa2YEWqbSqJAs8AAOymvo6mcwfQlFM.webp"
                     alt=""></div>
-            <div class="card"><img
+            <div class="card" id="c4"><img
                     src="assets/images/AAAABcrhAaNZU6tXbpVoi9LpbMZmjZX22ZfuOwNmuPy5i4quoB8cWiO-67vbTk07rZyX5YtKKci5c0XoFHJ1vphlx0Rau-hgCpnzEfMORMer4uPuTytZw3q4AMK38cPtc4fjKe2e.webp"
                     alt=""></div>
-            <div class="card"><img
+            <div class="card" id="c5"><img
                     src="assets/images/AAAABU73BvQjJgydQFEJ-vZZw9QtO8fL6lIxc71x9tOqxgDWh_BHokCWPIbGC5AxJjDk0D_sIH5KhmmYm9HLr3DKUXg8eo6nzF0rtSI.webp"
                     alt=""></div>
-            <div class="card"><img
+            <div class="card" id="c6"><img
                     src="assets/images/AAAABUTnHgG7bG3df3wU2JPbU5Llvb57iV3MHaKQDdydXtNISE-_64RPMMa9xP0fOq0HXptmHu2JKp6vcmRkOyn8t9mMzIvFeUy0xJlxb9yXuhR7Xbmi1EDZLV-eZkTAyyLXXCcl.webp"
                     alt=""></div>
-            <div class="card"><img
+            <div class="card" id="c7"><img
                     src="assets/images/AAAABVVzJ7Q5ewWWr7Ju9Vpu5gUq1Guy_hTrvChxJceb-sKqWPiIs1YGHsy_iC2mNT5bKs2BepshCHriwd7IQhYM2HPuqd7MBfqMXFL8nXJshtQEi6-KAKZAcSvG7xE3daK4ABuC.webp"
                     alt=""></div>
-            <div class="card"><img
+            <div class="card" id="c8"><img
                     src="assets/images/AAAABYGL4_ns5MGTE5-Yd3ZQVB5apyY9yxQ39lxjT_27ehdoGzrxRwNc4osgXEeifcv9yO_MgMySL-p6hMxtQZnIEkZmyglIJ7wm7ik.webp"
                     alt=""></div>
-            <div class="card"><img
+            <div class="card" id="c9"><img
                     src="assets/images/AAAABYUCgDPIk4LvnEw_j-dC5ca65oxm4yP2Z7RFKlRcN6WYzCwNA4MhTNqTRrSAK9zND3cSjrYEpbQculmTCXPD09ZbvdCosdbuOjc.webp"
                     alt=""></div>
-            <div class="card"><img
+            <div class="card" id="c10"><img
                     src="assets/images/AAAABcBQAzZgCcAJyLKGf0x3EjJHKr1h1oCRUQDfVspaHXampP-RjiOkIRlWBz7ViFOvUI1EdPSRcxoOPmB7paPLi52W4OmQZJ4NDMQ.webp"
                     alt=""></div>
 
@@ -446,59 +447,101 @@
         <div class="faqwrapper">
             <span>Frequently Asked Questions</span>
             <div class="q">
-                <div class="fa">What is Netflix
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 36 36" width="36"
-                        height="36" data-icon="PlusLarge" aria-hidden="true"
-                        class="default-ltr-cache-1ulhx3w e164gv2o4">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z"
-                            fill="currentColor"></path>
+                <div class="qwrap" >
+                    <div class="fa" id="q1">What is Netflix
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 36 36" width="36"
+                            height="36" data-icon="PlusLarge" aria-hidden="true"
+                            class="default-ltr-cache-1ulhx3w e164gv2o4">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z"
+                                fill="currentColor"></path>
 
-                    </svg>
+                        </svg>
+
+                    </div>
+                    <div class="ans" id="a1">Netflix is a streaming service that offers a wide variety of award-winning TV
+                        shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+
+                        You can watch as much as you want, whenever you want, without a single ad – all for one low
+                        monthly price. There's always something new to discover, and new TV shows and movies are added
+                        every week!</div>
                 </div>
-                <div class="fa">How much does Netflix cost
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 36 36" width="36"
-                        height="36" data-icon="PlusLarge" aria-hidden="true"
-                        class="default-ltr-cache-1ulhx3w e164gv2o4">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z"
-                            fill="currentColor"></path>
+                <div class="qwrap">
+                    <div class="fa" id="q2">How much does Netflix cost
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 36 36" width="36"
+                            height="36" data-icon="PlusLarge" aria-hidden="true"
+                            class="default-ltr-cache-1ulhx3w e164gv2o4">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z"
+                                fill="currentColor"></path>
 
-                    </svg>
+                        </svg>
+                    </div>
+                    <div class="ans" id="a2" id="q3">Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device,
+                        all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no
+                        contracts.</div>
                 </div>
-                <div class="fa">Where can I watch
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 36 36" width="36"
-                        height="36" data-icon="PlusLarge" aria-hidden="true"
-                        class="default-ltr-cache-1ulhx3w e164gv2o4">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z"
-                            fill="currentColor"></path>
+                <div class="qwrap">
+                    <div class="fa" id="q3">Where can I watch
 
-                    </svg>
+                        <svg  xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 36 36" width="36"
+                            height="36" data-icon="PlusLarge" aria-hidden="true"
+                            class="default-ltr-cache-1ulhx3w e164gv2o4">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z"
+                                fill="currentColor"></path>
+
+                        </svg>
+                    </div>
+                    <div class="ans" id="a3">Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on
+                        the web at netflix.com from your personal computer or on any internet-connected device that
+                        offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and
+                        game consoles.
+
+                        You can also download your favourite shows with the iOS or Android app. Use downloads to watch
+                        while you're on the go and without an internet connection. Take Netflix with you anywhere.</div>
                 </div>
-                <div class="fa">How do I cancel
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 36 36" width="36"
-                        height="36" data-icon="PlusLarge" aria-hidden="true"
-                        class="default-ltr-cache-1ulhx3w e164gv2o4">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z"
-                            fill="currentColor"></path>
+                <div class="qwrap" >
+                    <div class="fa" id="q4">How do I cancel
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 36 36" width="36"
+                            height="36" data-icon="PlusLarge" aria-hidden="true"
+                            class="default-ltr-cache-1ulhx3w e164gv2o4">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z"
+                                fill="currentColor"></path>
 
-                    </svg>
+                        </svg>
+                    </div>
+                    <div class="ans" id="a4">Netflix is flexible. There are no annoying contracts and no commitments. You can
+                        easily cancel your account online in two clicks. There are no cancellation fees – start or stop
+                        your account anytime.</div>
                 </div>
-                <div class="fa">What can i watch on Netflix
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 36 36" width="36"
-                        height="36" data-icon="PlusLarge" aria-hidden="true"
-                        class="default-ltr-cache-1ulhx3w e164gv2o4">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z"
-                            fill="currentColor"></path>
+                <div class="qwrap">
+                    <div class="fa" id="q5">What can i watch on Netflix
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 36 36" width="36"
+                            height="36" data-icon="PlusLarge" aria-hidden="true"
+                            class="default-ltr-cache-1ulhx3w e164gv2o4">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z"
+                                fill="currentColor"></path>
 
-                    </svg>
+                        </svg>
+                    </div>
+                    <div class="ans" id="a5">Netflix has an extensive library of feature films, documentaries, TV shows,
+                        anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.
+                    </div>
                 </div>
-                <div class="fa">Is Netflix good for Kids
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 36 36" width="36"
-                        height="36" data-icon="PlusLarge" aria-hidden="true"
-                        class="default-ltr-cache-1ulhx3w e164gv2o4">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z"
-                            fill="currentColor"></path>
 
-                    </svg>
+                <div class="qwrap">
+                    <div class="fa" id="q6">Is Netflix good for Kids
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 36 36" width="36"
+                            height="36" data-icon="PlusLarge" aria-hidden="true"
+                            class="default-ltr-cache-1ulhx3w e164gv2o4">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z"
+                                fill="currentColor"></path>
+
+                        </svg>
+                    </div>
+                    <div class="ans" id="a6">The Netflix Kids experience is included in your membership to give parents
+                        control while kids enjoy family-friendly TV shows and films in their own space.
+
+                        Kids profiles come with PIN-protected parental controls that let you restrict the maturity
+                        rating of content kids can watch and block specific titles you don’t want kids to see.</div>
                 </div>
 
             </div>
@@ -541,7 +584,7 @@
             🔰 Netflix Clone made by Debashish Palai</span>
     </footer>
 
-
+    <script src="script.js"></script>
 </body>
 
 </html>
